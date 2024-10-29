@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robots That Ask For Help</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            font-weight: normal;
+            color: #555;
+            margin-top: 0;
+        }
+
+        .authors {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            margin: 1.5em 0;
+        }
+
+        .author {
+            color: #2962ff;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .author:hover {
+            text-decoration: underline;
+        }
+
+        .dot {
+            color: #666;
+            margin: 0 4px;
+        }
+
+        .affiliations {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            margin: 2em 0;
+        }
+
+        .award {
+            background-color: #fff3e0;
+            color: #e65100;
+            padding: 8px 16px;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 1em 0;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            margin: 2em 0;
+        }
+
+        .link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .link:hover {
+            color: #2962ff;
+        }
+
+        .demo {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 2em 0;
+        }
+
+        .chat-box {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .message {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .demo-image {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .abstract {
+            text-align: left;
+            margin: 2em 0;
+        }
+
+        @media (max-width: 768px) {
+            .demo {
+                grid-template-columns: 1fr;
+            }
+            
+            .affiliations {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Robots That Ask For Help:</h1>
+        <h2>Uncertainty Alignment for Large Language Model Planners</h2>
+
+        <div class="authors">
+            <a href="#" class="author">Allen Z. Ren</a><span class="dot">•</span>
+            <a href="#" class="author">Anushri Dixit</a><span class="dot">•</span>
+            <a href="#" class="author">Alexandra Bodrova</a><span class="dot">•</span>
+            <a href="#" class="author">Sumeet Singh</a><span class="dot">•</span>
+            <a href="#" class="author">Stephen Tu</a><span class="dot">•</span>
+            <a href="#" class="author">Noah Brown</a><span class="dot">•</span>
+            <a href="#" class="author">Peng Xu</a><span class="dot">•</span>
+            <a href="#" class="author">Leila Takayama</a><span class="dot">•</span>
+            <a href="#" class="author">Fei Xia</a><span class="dot">•</span>
+            <a href="#" class="author">Jake Varley</a><span class="dot">•</span>
+            <a href="#" class="author">Zhenjia Xu</a><span class="dot">•</span>
+            <a href="#" class="author">Dorsa Sadigh</a><span class="dot">•</span>
+            <a href="#" class="author">Andy Zeng</a><span class="dot">•</span>
+            <a href="#" class="author">Anirudha Majumdar</a>
+        </div>
+
+        <div class="affiliations">
+            <img src="assets/deepmind.png" alt="Google DeepMind" height="40">
+            <img src="assets/princeton.png" alt="Princeton University" height="40">
+        </div>
+
+        <div class="award">
+            CoRL 2023, Best Student Paper
+        </div>
+
+        <div class="links">
+            <a href="#" class="link">
+                <img src="assets/paper.png" alt="Paper" width="24"> Paper
+            </a>
+            <a href="#" class="link">
+                <img src="assets/video.png" alt="Video" width="24"> Video
+            </a>
+            <a href="#" class="link">
+                <img src="assets/github.png" alt="Code" width="24"> Code
+            </a>
+            <a href="#" class="link">
+                <img src="assets/demo.png" alt="Demo" width="24"> Demo
+            </a>
+        </div>
+
+        <div class="demo">
+            <div class="chat-box">
+                <div class="message">
+                    Hey robot, could you put the bowl on the small counter in the microwave?
+                </div>
+            </div>
+            <img src="assets/robot-demo.jpg" alt="Robot demonstration" class="demo-image">
+        </div>
+
+        <div class="abstract">
+            <h2>Abstract</h2>
+            <p>
+                Large language models (LLMs) exhibit a wide range of promising capabilities --- from step-by-step planning to 
+                reasoning about object affordances --- that make them appealing as high-level robot planners. However, 
+                deployed robotic systems often encounter situations where they are uncertain about the correct course of 
+                action...
+            </p>
+        </div>
+    </div>
+</body>
+</html>
